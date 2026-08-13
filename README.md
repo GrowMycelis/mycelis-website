@@ -20,4 +20,4 @@ The waitlist UI intentionally does not submit or store emails. Connect the form 
 
 ## Assets
 
-Mycelis imagery and locally hosted font files are retained in `assets/`. Verdelis has no supplied product imagery, so the Verdelis visuals are clearly labelled CSS placeholders ready to be replaced with approved renders or photography.
+Mycelis imagery and locally hosted font files are retained in `assets/`. No Verdelis product image has been supplied, so the Verdelis pages deliberately use restrained editorial status panels rather than fabricated product renders. Replace those panels with approved Verdelis photography or renders when available.
