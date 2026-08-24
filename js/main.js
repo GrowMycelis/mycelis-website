@@ -1,38 +1,56 @@
-const menuButton = document.querySelector("[data-nav-toggle]");
-const navigation = document.querySelector("[data-nav]");
+const menuButton = document.querySelector("[data-menu-button]");
+const menu = document.querySelector("[data-menu]");
 
-if (menuButton && navigation) {
-  const closeMenu = () => {
-    menuButton.setAttribute("aria-expanded", "false");
-    navigation.classList.remove("is-open");
-  };
-
-  menuButton.addEventListener("click", () => {
-    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
-    menuButton.setAttribute("aria-expanded", String(!isOpen));
-    navigation.classList.toggle("is-open", !isOpen);
-  });
-
-  navigation.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+function closeMenu() {
+  if (!menuButton || !menu) return;
+  menuButton.setAttribute("aria-expanded", "false");
+  menu.classList.remove("is-open");
+  document.body.classList.remove("menu-open");
 }
 
-const interestForm = document.querySelector("[data-interest-form]");
-if (interestForm) {
-  const productFromUrl = new URLSearchParams(window.location.search).get("interest");
-  const availableProducts = ["mycelis", "verdelis", "both"];
-  if (availableProducts.includes(productFromUrl)) {
-    const matchingInput = interestForm.querySelector(`input[value="${productFromUrl}"]`);
-    if (matchingInput) matchingInput.checked = true;
+if (menuButton && menu) {
+  menuButton.addEventListener("click", () => {
+    const willOpen = menuButton.getAttribute("aria-expanded") !== "true";
+    menuButton.setAttribute("aria-expanded", String(willOpen));
+    menu.classList.toggle("is-open", willOpen);
+    document.body.classList.toggle("menu-open", willOpen);
+  });
+
+  menu.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeMenu();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menu.classList.contains("is-open")) {
+      closeMenu();
+      menuButton.focus();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 820) closeMenu();
+  });
+}
+
+const waitlistForm = document.querySelector("[data-waitlist-form]");
+
+if (waitlistForm) {
+  const requestedInterest = new URLSearchParams(window.location.search).get("interest");
+  if (["mycelis", "verdelis", "both"].includes(requestedInterest)) {
+    const requestedChoice = waitlistForm.querySelector(`input[name="interest"][value="${requestedInterest}"]`);
+    if (requestedChoice) requestedChoice.checked = true;
   }
 
-  interestForm.addEventListener("submit", (event) => {
+  waitlistForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    const email = interestForm.querySelector("input[type='email']");
-    const status = interestForm.querySelector("[data-form-status]");
+    const email = waitlistForm.querySelector('input[type="email"]');
+    const message = waitlistForm.querySelector("[data-form-message]");
+
     if (!email.checkValidity()) {
       email.reportValidity();
       return;
     }
-    status.textContent = "Thanks for your interest. This preview does not send or store your details yet.";
+
+    message.textContent = "Nothing was sent—the mailing-list connection is not active yet. You can contact hello@mycelis.co.nz in the meantime.";
   });
 }

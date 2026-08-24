@@ -1,23 +1,30 @@
-# Mycelis + Verdelis static website
+# Mycelis + Verdelis website
 
-This is a dependency-free static website for GitHub Pages. It contains the Mycelis and Verdelis product pages, an about page, and a non-submitting waitlist interface prepared for a future form provider.
+A lightweight, dependency-free static website for GitHub Pages.
 
-## Preview locally
+## Routes
 
-Open `index.html` in a browser, or serve this directory with any static file server.
+- `index.html` — product-family homepage and waitlist preview
+- `mycelis.html` — Mycelis product story
+- `verdelis.html` — Verdelis product story
+- `about.html` — development approach
+- `contact.html` — contact details
+- `privacy.html` — privacy information
 
-## Publish with GitHub Pages
+## Preview
 
-1. Put the contents of this directory at the root of a GitHub repository.
-2. In **Settings → Pages**, choose **Deploy from a branch**.
-3. Select branch `main`, folder `/ (root)`, then save.
+Open `index.html` directly or serve this directory with a static file server.
 
-The site uses only relative URLs, so it works on the repository's GitHub Pages URL without a custom domain.
+## GitHub Pages
 
-## Future waitlist integration
+Place this directory's contents at the repository root. In **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/ (root)`.
 
-The waitlist UI intentionally does not submit or store emails. Connect the form in `index.html` to the selected provider when ready, and update `privacy.html` to describe the data collection and retention details.
+All internal paths are relative and require no backend, build process, package installation, or environment variables.
 
-## Assets
+## Current limitations
 
-Mycelis imagery and locally hosted font files are retained in `assets/`. No Verdelis product image has been supplied, so the Verdelis pages deliberately use restrained editorial status panels rather than fabricated product renders. Replace those panels with approved Verdelis photography or renders when available.
+- The waitlist interface is deliberately unconnected. It does not submit or store email addresses.
+- No finished Verdelis render or photography has been supplied. Its page uses an intentional type-led, tiered composition and makes no visual claim about final hardware.
+- Product imagery is based on the existing supplied Mycelis assets and is labelled as development imagery where relevant.
+
+When a real mailing-list service is connected, update `privacy.html` at the same time.
