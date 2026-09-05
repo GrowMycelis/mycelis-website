@@ -36,7 +36,7 @@ const waitlistForm = document.querySelector("[data-waitlist-form]");
 
 if (waitlistForm) {
   const requestedInterest = new URLSearchParams(window.location.search).get("interest");
-  if (["mycelis", "verdeis", "both"].includes(requestedInterest)) {
+  if (["mycelis", "virelis", "both"].includes(requestedInterest)) {
     const requestedChoice = waitlistForm.querySelector(`input[name="interest"][value="${requestedInterest}"]`);
     if (requestedChoice) requestedChoice.checked = true;
   }
