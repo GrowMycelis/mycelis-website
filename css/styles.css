@@ -202,11 +202,12 @@ h3 { font-size: clamp(2rem, 3.5vw, 3.7rem); }
 .development-copy h2 { max-width: 7.2ch; margin-top: 1.3rem; }
 .development-copy > p:not(.section-index) { max-width: 29rem; margin-top: 2rem; color: var(--text-secondary); }
 
-.waitlist { display: grid; grid-template-columns: minmax(20rem, .7fr) minmax(31rem, 1.3fr); gap: clamp(4rem, 10vw, 12rem); padding: clamp(7rem, 12vw, 13rem) var(--page-gutter); background: var(--text-primary); color: white; }
-.waitlist-copy h2 { max-width: 7ch; margin-top: 1.3rem; color: white; }
-.waitlist-copy > p:last-child { margin-top: 1.5rem; color: #bcb5ba; }
+.waitlist { display: grid; grid-template-columns: minmax(0, .88fr) minmax(28rem, 1.12fr); align-items: center; gap: clamp(3rem, 6vw, 7rem); padding: clamp(4.5rem, 6vw, 6.5rem) max(var(--page-gutter), calc((100vw - 90rem) / 2)); background: var(--text-primary); color: white; }
+.waitlist-copy h2 { max-width: 9ch; margin-top: 1.3rem; color: white; font-size: clamp(3.8rem, 5vw, 6.25rem); }
+.waitlist-copy > p:last-child { max-width: 31rem; margin-top: 1.5rem; color: #bcb5ba; font-size: clamp(1rem, 1.1vw, 1.125rem); }
 .waitlist .section-index { color: #aaa2a8; }
-.waitlist-embed { min-width: 0; align-self: center; padding: clamp(1rem, 2vw, 1.5rem); border-radius: 1.25rem; background: white; color: var(--text-primary); box-shadow: 0 1rem 3rem rgba(0, 0, 0, .14); }
+.waitlist-form-slot { display: grid; min-width: 0; min-height: 18rem; place-items: center; }
+.waitlist-embed { width: min(100%, 42rem); min-width: 0; padding: clamp(1rem, 2vw, 1.5rem); border-radius: 1.25rem; background: white; color: var(--text-primary); box-shadow: 0 1rem 3rem rgba(0, 0, 0, .14); }
 .waitlist-embed > *, .waitlist-embed iframe { max-width: 100%; }
 .waitlist-embed iframe { display: block; width: 100%; border: 0; }
 .waitlist-embed noscript p { color: var(--text-secondary); }
@@ -472,7 +473,10 @@ h3 { font-size: clamp(2rem, 3.5vw, 3.7rem); }
 
   .development-story figure { min-height: 75svh; }
   .development-copy { min-height: 65svh; }
-  .waitlist { grid-template-columns: 1fr; gap: 4rem; }
+  .waitlist { grid-template-columns: 1fr; gap: 4rem; padding: 7rem var(--page-gutter); }
+  .waitlist-copy h2 { max-width: 7ch; font-size: clamp(3rem, 11vw, 5.6rem); }
+  .waitlist-copy > p:last-child { font-size: 1rem; }
+  .waitlist-form-slot { min-height: 0; }
 
   .mycelis-hero { min-height: auto; }
   .mycelis-hero-copy { min-height: 70svh; }
