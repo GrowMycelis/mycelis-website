@@ -206,24 +206,11 @@ h3 { font-size: clamp(2rem, 3.5vw, 3.7rem); }
 .waitlist-copy h2 { max-width: 7ch; margin-top: 1.3rem; color: white; }
 .waitlist-copy > p:last-child { margin-top: 1.5rem; color: #bcb5ba; }
 .waitlist .section-index { color: #aaa2a8; }
-.waitlist-form { align-self: center; }
-.waitlist-form fieldset { margin: 0; padding: 0; border: 0; }
-.waitlist-form legend, .email-control > label { display: block; margin-bottom: .8rem; color: #c6bfc4; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
-.interest-choices { display: flex; border-top: 1px solid #5b545a; border-bottom: 1px solid #5b545a; }
-.interest-choices label { flex: 1; cursor: pointer; }
-.interest-choices input { position: absolute; opacity: 0; pointer-events: none; }
-.interest-choices span { display: block; padding: 1.1rem .8rem; color: #aea6ac; text-align: center; transition: background-color .2s ease, color .2s ease; }
-.interest-choices label + label span { border-left: 1px solid #5b545a; }
-.interest-choices input:checked + span { background: white; color: var(--text-primary); }
-.interest-choices input:focus-visible + span { outline: 3px solid var(--mycelis-accent); outline-offset: -3px; }
-.email-control { margin-top: 2.2rem; }
-.email-control > div { display: flex; border-bottom: 1px solid #817980; }
-.email-control input { min-width: 0; flex: 1; padding: 1rem 0; border: 0; outline: 0; background: transparent; color: white; }
-.email-control input::placeholder { color: #827a80; }
-.email-control button { border: 0; background: transparent; color: white; font-size: .82rem; font-weight: 700; cursor: pointer; }
-.email-control:focus-within > div { border-color: white; }
-.form-disclosure, .form-message { max-width: 38rem; margin-top: .8rem; color: #8f878d; font-size: .72rem; }
-.form-message { min-height: 1.2em; color: #d8cfd5; }
+.waitlist-embed { min-width: 0; align-self: center; padding: clamp(1rem, 2vw, 1.5rem); border-radius: 1.25rem; background: white; color: var(--text-primary); box-shadow: 0 1rem 3rem rgba(0, 0, 0, .14); }
+.waitlist-embed > *, .waitlist-embed iframe { max-width: 100%; }
+.waitlist-embed iframe { display: block; width: 100%; border: 0; }
+.waitlist-embed noscript p { color: var(--text-secondary); }
+.waitlist-embed noscript a { color: var(--mycelis-accent-ink); text-decoration: underline; text-underline-offset: .2em; }
 
 /* Mycelis */
 .mycelis-hero { display: grid; min-height: calc(100svh - var(--nav-height)); grid-template-columns: minmax(24rem, 1.2fr) minmax(26rem, .8fr); background: var(--mycelis-dark); color: white; }

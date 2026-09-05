@@ -31,26 +31,3 @@ if (menuButton && menu) {
     if (window.innerWidth > 820) closeMenu();
   });
 }
-
-const waitlistForm = document.querySelector("[data-waitlist-form]");
-
-if (waitlistForm) {
-  const requestedInterest = new URLSearchParams(window.location.search).get("interest");
-  if (["mycelis", "virelis", "both"].includes(requestedInterest)) {
-    const requestedChoice = waitlistForm.querySelector(`input[name="interest"][value="${requestedInterest}"]`);
-    if (requestedChoice) requestedChoice.checked = true;
-  }
-
-  waitlistForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const email = waitlistForm.querySelector('input[type="email"]');
-    const message = waitlistForm.querySelector("[data-form-message]");
-
-    if (!email.checkValidity()) {
-      email.reportValidity();
-      return;
-    }
-
-    message.textContent = "Nothing was sent—the mailing-list connection is not active yet. You can contact hello@mycelis.co.nz in the meantime.";
-  });
-}
