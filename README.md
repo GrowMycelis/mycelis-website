@@ -4,7 +4,7 @@ A lightweight, dependency-free static website for GitHub Pages.
 
 ## Routes
 
-- `index.html` — product-family homepage and waitlist preview
+- `index.html` — product-family homepage and EmailOctopus mailing list
 - `mycelis.html` — Mycelis product story
 - `virelis.html` — Virelis product story
 - `about.html` — development approach
@@ -23,8 +23,8 @@ All internal paths are relative and require no backend, build process, package i
 
 ## Current limitations
 
-- The waitlist interface is deliberately unconnected. It does not submit or store email addresses.
+- The mailing list uses the supplied EmailOctopus inline form. Its fields and confirmation behaviour are managed in EmailOctopus; `privacy.html` describes this connection.
 - No finished Virelis render or photography has been supplied. Clearly labelled concept placeholders now fill the Virelis homepage and product-page image positions, with separate landscape and portrait crops for desktop and mobile.
-- The homepage and Mycelis hero use the supplied green development render. The homepage also identifies the supplied black-and-white machine as the current September 2026 prototype.
+- The homepage and Mycelis hero use the supplied green development render. Both pages use the new supplied photo of pink oyster mushrooms growing in the black-and-white machine as the current October 2026 prototype. Mycelis is nearly ready for its first in-person showing; a date has not been announced.
 
-When a real mailing-list service is connected, update `privacy.html` at the same time.
+Keep `privacy.html` aligned with any future mailing-list service changes.
