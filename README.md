@@ -24,7 +24,11 @@ All internal paths are relative and require no backend, build process, package i
 ## Current limitations
 
 - The mailing list uses the supplied EmailOctopus inline form. Its fields and confirmation behaviour are managed in EmailOctopus; `privacy.html` describes this connection.
-- The homepage and Virelis page use the supplied updated Virelis render and physical prototype photo. The prototype photo carries a November 2026 corner label. It is cropped to 4:5 to remove excess wall and countertop while retaining the whole unit; the new render is shown without cropping the machine. Earlier Virelis placeholder renders are no longer used on either page.
+- Product renders and prototype photos use matched 1000 × 1250 (4:5) photographic crops on the homepage and product pages, retaining the supplied machines and their original settings. The Virelis prototype carries a November 2026 corner label. Earlier Virelis placeholder renders are no longer used on either page.
 - The homepage and Mycelis hero use the supplied green development render. Both pages use the new supplied photo of pink oyster mushrooms growing in the black-and-white machine as the current October 2026 prototype. Mycelis is nearly ready for its first in-person showing; a date has not been announced.
 
 Keep `privacy.html` aligned with any future mailing-list service changes.
+
+## Layout
+
+The active pages share a 1280px maximum width, consistent columns and spacing, and responsive type sizes. Product images share the same frame proportions. Layout has been checked on all six pages at 1920, 1440, 1024, 820, 390 and 320px, including the mobile navigation; the existing EmailOctopus embed was also checked on desktop and mobile without submitting data.
