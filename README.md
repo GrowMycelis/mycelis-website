@@ -32,3 +32,7 @@ Keep `privacy.html` aligned with any future mailing-list service changes.
 ## Layout
 
 The active pages share a 1280px maximum width, consistent columns and spacing, and responsive type sizes. Product images share the same frame proportions. Layout has been checked on all six pages at 1920, 1440, 1024, 820, 390 and 320px, including the mobile navigation; the existing EmailOctopus embed was also checked on desktop and mobile without submitting data.
+
+## Content
+
+The pages explain the side-loading magnetic Mycelis window, ready-to-grow cartridges, Virelis shelves and current screen controls, prototype progress, and practical questions about using or ordering a machine. Copy uses a conversational brand voice. Final specifications, prices, seed/cartridge ranges and release dates are not invented; unconfirmed details are identified as such. FAQ answers use native HTML details elements and work without JavaScript.
