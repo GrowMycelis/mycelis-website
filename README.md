@@ -31,7 +31,7 @@ Keep `privacy.html` aligned with any future mailing-list service changes.
 
 ## Layout
 
-The active pages share a 1160px maximum width, consistent columns and spacing, and responsive type sizes. The minimalist theme uses one local sans-serif typeface, an off-white canvas, light rules and small purple/green accents. Product photography supplies the main colour; names sit below the homepage images. Product images share the same frame proportions. Layout has been checked on all six pages at 1920, 1440, 1024, 820, 390 and 320px, including the mobile navigation; the existing EmailOctopus embed was also checked on desktop and mobile without submitting data. Its duplicate introductory copy is visually hidden while the site's signup introduction and provider branding remain visible.
+The active pages share a 1280px maximum width, consistent columns and responsive type sizes. The product-led theme uses a system sans-serif typeface, rounded panels, soft purple/green gradients and glass-like controls. The homepage standoff places product names over matched photos, with a central plus badge, gentle zoom and pointer-following light. Hover motion is disabled for reduced-motion preferences and pointer tracking only runs for fine, hover-capable pointers. Product images share the same frame proportions. Layout has been checked on all six pages at 1920, 1440, 1024, 820, 390 and 320px, including the mobile navigation; the existing EmailOctopus embed was also checked without submitting data. Its duplicate introductory copy is visually hidden while the site's signup introduction and provider branding remain visible.
 
 ## Content
 
