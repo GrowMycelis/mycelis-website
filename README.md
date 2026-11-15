@@ -10,6 +10,7 @@ A lightweight, dependency-free static website for GitHub Pages.
 - `about.html` — development approach
 - `contact.html` — contact details
 - `privacy.html` — privacy information
+- `preorder.html` — unlinked, no-index preorder pricing preview; not a live checkout
 
 ## Preview
 
@@ -40,3 +41,9 @@ The pages explain the side-loading magnetic Mycelis window, ready-to-grow cartri
 ## Food and nutrition information
 
 The homepage introduces the food as well as the appliances. Each product page has a food section, visible limitations and expandable research references. Mycelis separates general oyster-mushroom composition data from pink-oyster cultivation research. Virelis gives radish, pea and red-cabbage examples, explicitly not a confirmed seed range. Neither machine's harvest has been nutritionally tested. Do not turn composition measurements or laboratory antioxidant results into claims about immunity, disease prevention, guaranteed nutrient content or nutritional superiority over ordinary kits. A disclaimer is not a substitute for substantiation. Before selling food or cartridges with nutrition or health claims, review the specific wording, serving composition and applicable NZ requirements.
+
+## Preorder preview
+
+`preorder.html` shows Mycelis Base NZ$249 / Pro NZ$349 and Virelis Base NZ$249 / Pro NZ$349. It is absent from site navigation and has a `noindex, nofollow, noarchive` robots meta tag. This is obscurity, not access control: anyone with the URL or repository access can read it.
+
+The four Request links open separate, prefilled email drafts; they do not send automatically, collect payments, create orders, reserve stock, or subscribe anyone to marketing. Base/Pro differences, inclusions, delivery, tax/shipping treatment and order terms remain to be confirmed. No payment keys or pretend checkout have been added. To launch paid preorders, configure four hosted checkout links after confirming the model specifications, fulfilment expectations and terms; then update the preview labels and Request actions to match the actual purchase flow.

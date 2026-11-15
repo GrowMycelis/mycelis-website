@@ -276,6 +276,30 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
 .research-notes li + li { margin-top: 1rem; }
 .research-notes a { color: var(--text-primary); text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }
 
+.preorder-intro { max-width: 52rem; margin-inline: auto; padding: var(--section-space) var(--page-gutter) 2.5rem; text-align: center; }
+.preorder-status { display: inline-block; padding: .4rem .9rem; border: 1px solid var(--border-subtle); border-radius: 999px; background: var(--bg-paper); color: var(--text-secondary); font-size: .8125rem; }
+.preorder-intro h1 { margin-top: 1.5rem; }
+.preorder-intro > p:not(.preorder-status) { max-width: 38rem; margin: 1.25rem auto 0; color: var(--text-secondary); }
+.preorder-intro .preorder-intro-note { font-size: .9375rem; }
+.preorder-products { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; padding: 0 var(--page-gutter) var(--section-space); }
+.preorder-product { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1fr); align-items: center; gap: 1.75rem; min-width: 0; padding: clamp(1.25rem, 2.5vw, 2rem); border: 1px solid var(--border-subtle); border-radius: 28px; background: var(--bg-paper); }
+.preorder-product--mycelis { background: linear-gradient(150deg, #f3eef8, white 62%); }
+.preorder-product--virelis { background: linear-gradient(150deg, #edf3e8, white 62%); }
+.preorder-media { position: relative; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 18px; }
+.preorder-media img { width: 100%; height: 100%; object-fit: cover; }
+.preorder-media figcaption { position: absolute; right: .5rem; bottom: .5rem; left: .5rem; padding: .35rem .5rem; border-radius: 6px; background: rgba(24,22,25,.8); color: white; font-size: .6875rem; line-height: 1.4; text-align: center; }
+.preorder-product-copy { min-width: 0; }
+.preorder-product-copy h2 { margin-top: .75rem; font-size: clamp(2rem, 3.5vw, 2.75rem); }
+.preorder-product-copy > p:not(.product-name) { margin-top: 1rem; color: var(--text-secondary); font-size: .9375rem; }
+.preorder-options { display: grid; grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.preorder-model { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; }
+.preorder-model h3 { font-size: 1.125rem; }
+.preorder-price { display: flex; align-items: baseline; gap: .2rem; margin: 1rem 0 1.5rem; line-height: 1.1; letter-spacing: -.04em; }
+.preorder-price span { font-size: .9375rem; letter-spacing: -.015em; }
+.preorder-price strong { font-size: clamp(2.25rem, 4vw, 3.25rem); font-weight: 600; }
+.preorder-model .solid-link { width: 100%; padding-inline: .75rem; }
+.preorder-details { margin-bottom: 1.25rem; padding: var(--section-space) var(--page-gutter); border-radius: 28px; background: var(--bg-paper); }
+
 @supports (background-clip: text) {
   .home-intro h2, .mycelis-hero h1 { background: linear-gradient(115deg, #3e294d 5%, #8a639e 90%); background-clip: text; color: transparent; }
   .virelis-hero h1 { background: linear-gradient(115deg, #1c3d2a 5%, #6a8756 90%); background-clip: text; color: transparent; }
@@ -315,7 +339,9 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
   .primary-nav.is-open { display: grid; }
   .primary-nav a { min-height: 48px; padding: .7rem 0; border-bottom: 1px solid var(--border-subtle); font-size: 1.1rem; }
   body.menu-open { overflow: hidden; }
-  .mycelis-hero, .virelis-hero, .prototype-story, .virelis-development, .process-summary, .about-hero--with-image, .design-intent, .contact-main, .waitlist, .content-split, .build-notes-grid, .food-facts { grid-template-columns: 1fr; }
+  .mycelis-hero, .virelis-hero, .prototype-story, .virelis-development, .process-summary, .about-hero--with-image, .design-intent, .contact-main, .waitlist, .content-split, .build-notes-grid, .food-facts, .preorder-products { grid-template-columns: 1fr; }
+  .preorder-product { gap: clamp(1rem, 4vw, 2rem); }
+  .preorder-media { max-width: 18rem; }
   .mycelis-hero, .virelis-hero { padding-block: 2.5rem; }
   .mycelis-hero h1, .virelis-hero h1 { max-width: 16ch; font-size: clamp(2.2rem,8vw,3rem); }
   .mycelis-hero figure, .virelis-hero-media, .prototype-story figure, .virelis-development-media { width: 100%; max-width: 30rem; margin-inline: auto; }
