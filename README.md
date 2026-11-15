@@ -36,3 +36,7 @@ The active pages share a 1280px maximum width, consistent columns and responsive
 ## Content
 
 The pages explain the side-loading magnetic Mycelis window, ready-to-grow cartridges, Virelis shelves and current screen controls, prototype progress, and practical questions about using or ordering a machine. Copy uses a conversational brand voice. Final specifications, prices, seed/cartridge ranges and release dates are not invented; unconfirmed details are identified as such. FAQ answers use native HTML details elements and work without JavaScript.
+
+## Food and nutrition information
+
+The homepage introduces the food as well as the appliances. Each product page has a food section, visible limitations and expandable research references. Mycelis separates general oyster-mushroom composition data from pink-oyster cultivation research. Virelis gives radish, pea and red-cabbage examples, explicitly not a confirmed seed range. Neither machine's harvest has been nutritionally tested. Do not turn composition measurements or laboratory antioxidant results into claims about immunity, disease prevention, guaranteed nutrient content or nutritional superiority over ordinary kits. A disclaimer is not a substitute for substantiation. Before selling food or cartridges with nutrition or health claims, review the specific wording, serving composition and applicable NZ requirements.

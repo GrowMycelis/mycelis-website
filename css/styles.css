@@ -249,6 +249,33 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
 .build-notes-grid article > p:not(.section-index) { margin-top: 1rem; color: var(--text-secondary); }
 .build-notes-grid .arrow-link { margin-top: 1.25rem; }
 
+.food-overview, .food-section { padding: var(--section-space) var(--page-gutter); }
+.food-overview .section-heading, .food-section .section-heading { max-width: 45rem; }
+.food-overview .section-heading > p:last-child, .food-section .section-heading > p:last-child { margin-top: 1.25rem; color: var(--text-secondary); }
+.food-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.food-card { display: flex; min-width: 0; flex-direction: column; padding: clamp(1.5rem, 3vw, 2.25rem); border: 1px solid var(--border-subtle); border-radius: 24px; background: var(--bg-paper); }
+.food-card--mycelis { background: linear-gradient(145deg, #f3eef8, white 72%); }
+.food-card--virelis { background: linear-gradient(145deg, #edf3e8, white 72%); }
+.food-card h3 { margin-top: 1.25rem; }
+.food-card > p:not(.product-name) { margin-top: 1rem; margin-bottom: 1.5rem; color: var(--text-secondary); }
+.food-card .arrow-link { align-self: flex-start; margin-top: auto; }
+.food-section { margin-block: 1.25rem; border-radius: 28px; background: var(--bg-paper); }
+.food-section--mycelis { --food-ink: var(--mycelis-ink); --food-line: #d8c8e4; }
+.food-section--virelis { --food-ink: var(--virelis-dark); --food-line: #c9d7c1; }
+.food-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.5rem, 3vw, 2.5rem); }
+.food-facts article { min-width: 0; padding-top: 1.25rem; border-top: 2px solid var(--food-line); }
+.food-facts h3 { color: var(--food-ink); font-size: 1.5rem; }
+.food-facts p { margin-top: 1rem; color: var(--text-secondary); }
+.source-ref { color: var(--food-ink, var(--text-primary)); font-size: .875rem; text-decoration: underline; text-underline-offset: .2em; white-space: nowrap; }
+.evidence-note { max-width: 85ch; margin-top: 2rem; color: var(--text-secondary); font-size: .875rem; line-height: 1.65; }
+.variety-note { margin: -.5rem 0 1.5rem; color: var(--text-secondary); font-size: .875rem; }
+.research-notes { margin-top: 1.5rem; border-top: 1px solid var(--border-subtle); }
+.research-notes summary { min-height: 48px; padding: 1rem .25rem; color: var(--food-ink); cursor: pointer; font-size: .9375rem; font-weight: 500; }
+.research-notes ol { max-width: 85ch; margin: 0; padding: .25rem 0 .5rem 1.5rem; color: var(--text-secondary); font-size: .875rem; }
+.research-notes li { padding-left: .25rem; }
+.research-notes li + li { margin-top: 1rem; }
+.research-notes a { color: var(--text-primary); text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }
+
 @supports (background-clip: text) {
   .home-intro h2, .mycelis-hero h1 { background: linear-gradient(115deg, #3e294d 5%, #8a639e 90%); background-clip: text; color: transparent; }
   .virelis-hero h1 { background: linear-gradient(115deg, #1c3d2a 5%, #6a8756 90%); background-clip: text; color: transparent; }
@@ -288,7 +315,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
   .primary-nav.is-open { display: grid; }
   .primary-nav a { min-height: 48px; padding: .7rem 0; border-bottom: 1px solid var(--border-subtle); font-size: 1.1rem; }
   body.menu-open { overflow: hidden; }
-  .mycelis-hero, .virelis-hero, .prototype-story, .virelis-development, .process-summary, .about-hero--with-image, .design-intent, .contact-main, .waitlist, .content-split, .build-notes-grid { grid-template-columns: 1fr; }
+  .mycelis-hero, .virelis-hero, .prototype-story, .virelis-development, .process-summary, .about-hero--with-image, .design-intent, .contact-main, .waitlist, .content-split, .build-notes-grid, .food-facts { grid-template-columns: 1fr; }
   .mycelis-hero, .virelis-hero { padding-block: 2.5rem; }
   .mycelis-hero h1, .virelis-hero h1 { max-width: 16ch; font-size: clamp(2.2rem,8vw,3rem); }
   .mycelis-hero figure, .virelis-hero-media, .prototype-story figure, .virelis-development-media { width: 100%; max-width: 30rem; margin-inline: auto; }
@@ -314,6 +341,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
   .duel-link > span { display: none; }
   .duel-mark { width: 2.5rem; height: 2.5rem; font-size: 1.4rem; }
   .prototype-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .food-grid { grid-template-columns: 1fr; }
   .prototype-card figure { max-width: 30rem; margin-inline: auto; }
   .process-summary li { grid-template-columns: 1.75rem 5.5rem minmax(0, 1fr); }
   .process-summary li > p { grid-column: 3; }
