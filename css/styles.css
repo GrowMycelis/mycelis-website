@@ -280,7 +280,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
 .research-notes a { color: var(--text-primary); text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }
 
 .refill-plans { margin-block: 1.25rem; padding: var(--section-space) var(--page-gutter); border-radius: 28px; background: var(--bg-paper); }
-.refill-plans .section-heading > p:last-child { margin-top: 1.25rem; color: var(--text-secondary); }
+.refill-plans .section-heading h2 ~ p { margin-top: 1.25rem; color: var(--text-secondary); }
 .refill-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .refill-card { min-width: 0; padding: 1.5rem; border: 1px solid #d4dfcf; border-radius: 20px; background: linear-gradient(145deg, #edf3e8, white 85%); }
 .refill-card--future { border-style: dashed; background: var(--bg-main); }
