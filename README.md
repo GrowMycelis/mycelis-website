@@ -32,11 +32,36 @@ Keep `privacy.html` aligned with any future mailing-list service changes.
 
 ## Layout
 
-The active pages share a 1280px maximum width, consistent columns and responsive type sizes. The product-led theme uses a system sans-serif typeface, rounded panels, soft purple/green gradients and glass-like controls. The homepage standoff places product names over matched photos, with a central plus badge, gentle zoom and pointer-following light. Hover motion is disabled for reduced-motion preferences and pointer tracking only runs for fine, hover-capable pointers. Product images share the same frame proportions. Layout has been checked on all six pages at 1920, 1440, 1024, 820, 390 and 320px, including the mobile navigation; the existing EmailOctopus embed was also checked without submitting data. Its duplicate introductory copy is visually hidden while the site's signup introduction and provider branding remain visible.
+The active pages share a 1280px maximum width, consistent columns and responsive type sizes. The product-led theme uses a system sans-serif typeface, rounded panels, soft purple/green gradients and glass-like controls. The homepage standoff places product names over matched photos, with a central plus badge, gentle zoom and pointer-following light. Hover motion is disabled for reduced-motion preferences and pointer tracking only runs for fine, hover-capable pointers. Product images share the same frame proportions. Layout is checked on all seven pages at 1920, 1440, 1024, 820, 390 and 320px, including the mobile navigation. The existing EmailOctopus embed is checked without submitting data. Its duplicate introductory copy is visually hidden while the site's signup introduction and provider branding remain visible.
 
 ## Content
 
-The pages explain the side-loading magnetic Mycelis window, ready-to-grow cartridges, Virelis shelves and current screen controls, prototype progress, and practical questions about using or ordering a machine. Copy uses a conversational brand voice. Final specifications, prices, seed/cartridge ranges and release dates are not invented; unconfirmed details are identified as such. FAQ answers use native HTML details elements and work without JavaScript.
+The pages explain the side-loading magnetic Mycelis window, planned ready-to-grow and DIY-compatible cartridges, Virelis automated watering/lighting plans and seed mats, prototype progress, and practical questions. Screens and their current controls are labelled as prototype features, not guaranteed on every model. Copy uses a conversational brand voice. Final specifications, seed/cartridge ranges and release dates are not invented; supplied preliminary prices are identified as plans, not live offers. FAQ answers use native HTML details elements and work without JavaScript.
+
+## Planned consumables — updated 16 November 2026
+
+- Virelis is a compact three-tier countertop microgreens appliance being designed to automate watering and lighting. Pre-seeded mats and compatible homemade mats are both planned.
+- Proposed Virelis mat dimensions: 125 × 125 mm, subject to final testing. Thickness, compatible materials and seed guidance remain to be confirmed. Do not confuse mat dimensions with appliance dimensions.
+- Planned standard pack: 9 mats / NZ$18, providing three full cycles with three mats per cycle across three tiers. Planned larger pack: 18 mats / NZ$32. Potential future bulk option only: 27 mats / NZ$45. These prices are preliminary and no purchase links are enabled.
+- An optional seed-mat subscription is under consideration: deliveries every 4, 6 or 8 weeks, an ongoing approximately 10% subscriber discount versus one-off packs, possible introductory offers, and easy skipping/pausing/cancellation. No billing, enrolment or final terms are implemented.
+- Compact bundles in lightweight recyclable cardboard, with internal protection, are the current packaging direction. Packaging dimensions, shipping rates and shelf life are not confirmed.
+- Both products are being designed to support compatible DIY consumables. Mycelis cartridge fit, ventilation, drainage and material requirements will be published after final validation. No prototype internal measurement is presented as maximum external cartridge fit, and no universal third-party compatibility or superior-yield claim is made.
+
+Keep the planned-offering sections and FAQs in `virelis.html` / `mycelis.html` aligned when these details change. Public primary actions say **Join the Waitlist**. The small provider-button label adjustment in `js/main.js` changes only its initial wording, not form fields, endpoint, validation or confirmation behaviour.
+
+### Interest collection
+
+The existing EmailOctopus form continues to collect mailing-list signups. Four clearly labelled email links let visitors separately express interest in Mycelis, Virelis, DIY compatibility or future mat subscriptions. These open drafts and send nothing automatically; they don't enrol anyone in marketing, take an order or authorise a subscription. Product-specific DIY email links are on the compatibility sections too. Automatic interest tagging inside EmailOctopus would require configuring corresponding fields/tags in the provider; no unsupported fields or fake preference capture have been added.
+
+### Confirm before launch
+
+- Final Base/Pro controls and screen/app features; appliance dimensions and clearances.
+- Automated watering/lighting validation and final care/cleaning instructions.
+- Virelis mat size/thickness, growing materials, seed range and mix/selection options.
+- Validated Mycelis cartridge fit, ventilation, drainage and material guidance.
+- Refill contents and prices, whether the 27-mat bulk option proceeds, packaging dimensions, storage conditions/shelf life and shipping rates.
+- Subscription intervals, standing/introductory discounts and skipping/pausing/cancellation terms.
+- Final machine/refill totals, delivery expectations, tax/shipping treatment and order/refund terms before any checkout opens.
 
 ## Food and nutrition information
 

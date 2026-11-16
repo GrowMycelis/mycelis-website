@@ -60,7 +60,7 @@ main { max-width: var(--content-max); margin-inline: auto; }
 img { display: block; max-width: 100%; }
 figure { margin: 0; }
 a { color: inherit; text-decoration: none; }
-.inline-link, .prose a:not(.arrow-link) { text-decoration: underline; text-underline-offset: .2em; }
+.inline-link, .prose a:not(.arrow-link):not(.solid-link) { text-decoration: underline; text-underline-offset: .2em; }
 button, input { font: inherit; }
 button { color: inherit; }
 h1, h2, h3, p, dl, dd { margin: 0; }
@@ -276,6 +276,31 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
 .research-notes li + li { margin-top: 1rem; }
 .research-notes a { color: var(--text-primary); text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }
 
+.refill-plans { margin-block: 1.25rem; padding: var(--section-space) var(--page-gutter); border-radius: 28px; background: var(--bg-paper); }
+.refill-plans .section-heading > p:last-child { margin-top: 1.25rem; color: var(--text-secondary); }
+.refill-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.refill-card { min-width: 0; padding: 1.5rem; border: 1px solid #d4dfcf; border-radius: 20px; background: linear-gradient(145deg, #edf3e8, white 85%); }
+.refill-card--future { border-style: dashed; background: var(--bg-main); }
+.refill-card h3 { margin-top: 1rem; }
+.refill-price { margin-top: .75rem; color: var(--virelis-dark); font-size: 2rem; font-weight: 600; letter-spacing: -.04em; line-height: 1.2; }
+.refill-card > p:last-child { margin-top: 1rem; color: var(--text-secondary); font-size: .9375rem; }
+.plan-note { max-width: 85ch; margin-top: 1.5rem; color: var(--text-secondary); font-size: .875rem; }
+.refill-notes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2rem, 4vw, 4rem); margin-top: 2.5rem; }
+.refill-notes article { min-width: 0; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle); }
+.refill-notes h3 { margin-bottom: 1rem; color: var(--text-primary); }
+.grow-your-way { margin-block: 1.25rem; border-radius: 28px; background: var(--bg-paper); }
+.compatibility-heading { font-size: 1.25rem; line-height: 1.3; }
+.compatibility-specs { margin-top: 1.5rem; }
+.compatibility-specs > div { display: grid; grid-template-columns: minmax(7rem, .8fr) minmax(0, 1.4fr); gap: 1.25rem; padding: 1rem 0; border-top: 1px solid var(--border-subtle); }
+.compatibility-specs dt { font-size: .9375rem; font-weight: 500; }
+.compatibility-specs dd { color: var(--text-secondary); font-size: .9375rem; }
+.waitlist-interests { grid-column: 1 / -1; border-top: 1px solid var(--border-subtle); padding-top: 1.5rem; color: var(--text-secondary); }
+.interest-links { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1rem; }
+.interest-links a { display: inline-flex; min-height: 44px; align-items: center; padding: .5rem .9rem; border: 1px solid var(--border-subtle); border-radius: 999px; background: var(--bg-paper); color: var(--text-primary); font-size: .875rem; }
+.interest-links a:hover { border-color: var(--text-secondary); }
+.waitlist-interests .signup-note { max-width: 70ch; margin-top: 1rem; font-size: .875rem; }
+.contact-details .solid-link, .content-split .prose > .solid-link { margin-top: 1.5rem; }
+
 .preorder-intro { max-width: 52rem; margin-inline: auto; padding: var(--section-space) var(--page-gutter) 2.5rem; text-align: center; }
 .preorder-status { display: inline-block; padding: .4rem .9rem; border: 1px solid var(--border-subtle); border-radius: 999px; background: var(--bg-paper); color: var(--text-secondary); font-size: .8125rem; }
 .preorder-intro h1 { margin-top: 1.5rem; }
@@ -339,7 +364,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
   .primary-nav.is-open { display: grid; }
   .primary-nav a { min-height: 48px; padding: .7rem 0; border-bottom: 1px solid var(--border-subtle); font-size: 1.1rem; }
   body.menu-open { overflow: hidden; }
-  .mycelis-hero, .virelis-hero, .prototype-story, .virelis-development, .process-summary, .about-hero--with-image, .design-intent, .contact-main, .waitlist, .content-split, .build-notes-grid, .food-facts, .preorder-products { grid-template-columns: 1fr; }
+  .mycelis-hero, .virelis-hero, .prototype-story, .virelis-development, .process-summary, .about-hero--with-image, .design-intent, .contact-main, .waitlist, .content-split, .build-notes-grid, .food-facts, .preorder-products, .refill-notes { grid-template-columns: 1fr; }
   .preorder-product { gap: clamp(1rem, 4vw, 2rem); }
   .preorder-media { max-width: 18rem; }
   .mycelis-hero, .virelis-hero { padding-block: 2.5rem; }
@@ -368,6 +393,8 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
   .duel-mark { width: 2.5rem; height: 2.5rem; font-size: 1.4rem; }
   .prototype-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .food-grid { grid-template-columns: 1fr; }
+  .refill-grid { grid-template-columns: 1fr; }
+  .compatibility-specs > div { grid-template-columns: 1fr; gap: .5rem; }
   .prototype-card figure { max-width: 30rem; margin-inline: auto; }
   .process-summary li { grid-template-columns: 1.75rem 5.5rem minmax(0, 1fr); }
   .process-summary li > p { grid-column: 3; }

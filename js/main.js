@@ -32,6 +32,25 @@ if (menuButton && menu) {
   });
 }
 
+// Keep the async provider form's initial button aligned with the site's CTA.
+// Submission, validation and confirmation remain entirely with EmailOctopus.
+const waitlistEmbed = document.querySelector(".waitlist-embed");
+if (waitlistEmbed) {
+  let labelObserver;
+  const setWaitlistLabel = () => {
+    const submit = waitlistEmbed.querySelector('input[type="submit"], button[type="submit"]');
+    if (!submit) return false;
+    labelObserver?.disconnect();
+    if (submit.tagName === "INPUT") submit.value = "Join the Waitlist";
+    else submit.textContent = "Join the Waitlist";
+    return true;
+  };
+  if (!setWaitlistLabel()) {
+    labelObserver = new MutationObserver(setWaitlistLabel);
+    labelObserver.observe(waitlistEmbed, { childList: true, subtree: true });
+  }
+}
+
 const finePointerMotion = window.matchMedia(
   "(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)"
 );
