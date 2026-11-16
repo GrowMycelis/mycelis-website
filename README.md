@@ -10,7 +10,7 @@ A lightweight, dependency-free static website for GitHub Pages.
 - `about.html` — development approach
 - `contact.html` — contact details
 - `privacy.html` — privacy information
-- `preorder.html` — unlinked, no-index entry to the separate password-protected shop preview; not a live checkout
+- `preorder.html` — legacy no-index entry to the separate password-protected sandbox shop. The visible Shop navigation/footer links now open the protected shop directly; no live checkout is enabled.
 
 ## Preview
 
@@ -44,11 +44,11 @@ The pages explain the side-loading magnetic Mycelis window, planned ready-to-gro
 
 - Virelis is a compact three-tier countertop microgreens appliance with automatic growing functions in both Base and Pro. Automatic light cycles are a Pro feature, not part of Base. Pre-seeded mats and compatible homemade mats are both planned.
 - Proposed Virelis mat dimensions: 125 × 125 mm, subject to final testing. Thickness, compatible materials and seed guidance remain to be confirmed. Do not confuse mat dimensions with appliance dimensions.
-- Planned standard pack: 9 mats / NZ$18, providing three full cycles with three mats per cycle across three tiers. Planned larger pack: 18 mats / NZ$32. Potential future bulk option only: 27 mats / NZ$45. These prices are preliminary and no purchase links are enabled.
+- Confirmed launch refill range: 9 mats / NZ$18, 18 mats / NZ$32, 27 mats / NZ$45. Four selectable varieties: Mixed Greens, Micro Pak Choy, Cress moss and Kohlrabi purple, in multiples of three per variety. Prices remain indicative and exclude shipping. The private shop supports sandbox test checkout, not real orders.
 - An optional seed-mat subscription is under consideration: deliveries every 4, 6 or 8 weeks, an ongoing approximately 10% subscriber discount versus one-off packs, possible introductory offers, and easy skipping/pausing/cancellation. No billing, enrolment or final terms are implemented.
 - Compact bundles in lightweight recyclable cardboard, with internal protection, are the current packaging direction. Packaging dimensions, shipping rates and shelf life are not confirmed.
 - Both products are being designed to support compatible DIY consumables. Mycelis cartridge fit, ventilation, drainage and material requirements will be published after final validation. No prototype internal measurement is presented as maximum external cartridge fit, and no universal third-party compatibility or superior-yield claim is made.
-- Preliminary Mycelis packs: Single Cartridge NZ$24.99 (NZ$24.99 each), Duo Pack NZ$44.99 (NZ$22.50 each, rounded), Triple Pack NZ$59.99 (NZ$20.00 each, rounded). Triple is highlighted as best per-cartridge value. These prices exclude shipping, may change as supplier arrangements are finalised and are not available to order. The planned cartridges arrive colonised and ready to fruit, prepared by specialist mushroom growers. The design supports front and rear fruiting, without a double-yield claim. Local collection/delivery options and suitable varieties' storage instructions/shelf life remain to be confirmed; no refrigeration conditions or storage durations are promised.
+- Preliminary Mycelis packs: Single Cartridge NZ$25 (NZ$25 each), Duo Pack NZ$45 (NZ$22.50 each), Triple Pack NZ$60 (NZ$20 each). Whole-dollar totals follow the owner's 17 November 2026 pricing update. Triple is highlighted as best per-cartridge value. Prices exclude shipping, may change as supplier arrangements are finalised and are not live order offers. The planned cartridges arrive colonised and ready to fruit, prepared by specialist mushroom growers. The design supports front and rear fruiting, without a double-yield claim. Local collection/delivery options and suitable varieties' storage instructions/shelf life remain to be confirmed; no refrigeration conditions or storage durations are promised.
 
 Keep the planned-offering sections and FAQs in `virelis.html` / `mycelis.html` aligned when these details change. Public primary actions say **Join the Waitlist**. The small provider-button label adjustment in `js/main.js` changes only its initial wording, not form fields, endpoint, validation or confirmation behaviour.
 
