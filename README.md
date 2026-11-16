@@ -36,11 +36,11 @@ The active pages share a 1280px maximum width, consistent columns and responsive
 
 ## Content
 
-The pages explain the side-loading magnetic Mycelis window, planned ready-to-grow and DIY-compatible cartridges, Virelis automated watering/lighting plans and seed mats, prototype progress, and practical questions. Screens and their current controls are labelled as prototype features, not guaranteed on every model. Copy uses a conversational brand voice. Final specifications, seed/cartridge ranges and release dates are not invented; supplied preliminary prices are identified as plans, not live offers. FAQ answers use native HTML details elements and work without JavaScript.
+The pages explain the side-loading magnetic Mycelis window, planned ready-to-grow and DIY-compatible cartridges, Virelis automatic growing plans and seed mats, prototype progress, and practical questions. Both products have the same planned control split: Base is automatic but screenless, with tactile buttons and no growth-duration prediction or automatic light cycles. Pro adds a screen, duration estimates and automatic light cycles. Photos show screen-equipped prototypes/renders, not Base models. Predictions are estimates, never guaranteed harvest dates; accuracy and remaining specifications still need validation. Copy uses a conversational brand voice. Final specifications, seed/cartridge ranges and release dates are not invented; supplied preliminary prices are identified as plans, not live offers. FAQ answers use native HTML details elements and work without JavaScript.
 
 ## Planned consumables — updated 16 November 2026
 
-- Virelis is a compact three-tier countertop microgreens appliance being designed to automate watering and lighting. Pre-seeded mats and compatible homemade mats are both planned.
+- Virelis is a compact three-tier countertop microgreens appliance with automatic growing functions in both Base and Pro. Automatic light cycles are a Pro feature, not part of Base. Pre-seeded mats and compatible homemade mats are both planned.
 - Proposed Virelis mat dimensions: 125 × 125 mm, subject to final testing. Thickness, compatible materials and seed guidance remain to be confirmed. Do not confuse mat dimensions with appliance dimensions.
 - Planned standard pack: 9 mats / NZ$18, providing three full cycles with three mats per cycle across three tiers. Planned larger pack: 18 mats / NZ$32. Potential future bulk option only: 27 mats / NZ$45. These prices are preliminary and no purchase links are enabled.
 - An optional seed-mat subscription is under consideration: deliveries every 4, 6 or 8 weeks, an ongoing approximately 10% subscriber discount versus one-off packs, possible introductory offers, and easy skipping/pausing/cancellation. No billing, enrolment or final terms are implemented.
@@ -56,8 +56,8 @@ The existing EmailOctopus form continues to collect mailing-list signups. Four c
 
 ### Confirm before launch
 
-- Final Base/Pro controls and screen/app features; appliance dimensions and clearances.
-- Automated watering/lighting validation and final care/cleaning instructions.
+- Validate the remaining Base/Pro specifications, screen interface and any app requirements; appliance dimensions and clearances. The screenless/tactile Base versus screen-equipped Pro distinction applies to both products.
+- Validate the automatic growing systems, Pro growth-duration estimates and Pro light cycles, plus final care/cleaning instructions. Do not add automatic light cycles or predictions to Base copy.
 - Virelis mat size/thickness, growing materials, seed range and mix/selection options.
 - Validated Mycelis cartridge fit, ventilation, drainage and material guidance.
 - Refill contents and prices, whether the 27-mat bulk option proceeds, packaging dimensions, storage conditions/shelf life and shipping rates.
@@ -73,4 +73,4 @@ The homepage introduces the food as well as the appliances. Each product page ha
 
 `preorder.html` shows Mycelis Base NZ$249 / Pro NZ$349 and Virelis Base NZ$249 / Pro NZ$349. It is absent from site navigation and has a `noindex, nofollow, noarchive` robots meta tag. This is obscurity, not access control: anyone with the URL or repository access can read it.
 
-The four Request links open separate, prefilled email drafts; they do not send automatically, collect payments, create orders, reserve stock, or subscribe anyone to marketing. Base/Pro differences, inclusions, delivery, tax/shipping treatment and order terms remain to be confirmed. No payment keys or pretend checkout have been added. To launch paid preorders, configure four hosted checkout links after confirming the model specifications, fulfilment expectations and terms; then update the preview labels and Request actions to match the actual purchase flow.
+The four Request links open separate, prefilled email drafts; they do not send automatically, collect payments, create orders, reserve stock, or subscribe anyone to marketing. Cards now state the planned Base/Pro control differences for both products. Remaining inclusions, delivery, tax/shipping treatment and order terms still need confirmation. No payment keys or pretend checkout have been added. To launch paid preorders, configure four hosted checkout links after validating the remaining model specifications, fulfilment expectations and terms; then update the preview labels and Request actions to match the actual purchase flow.
