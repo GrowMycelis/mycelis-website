@@ -10,7 +10,7 @@ A lightweight, dependency-free static website for GitHub Pages.
 - `about.html` — development approach
 - `contact.html` — contact details
 - `privacy.html` — privacy information
-- `preorder.html` — unlinked, no-index preorder pricing preview; not a live checkout
+- `preorder.html` — unlinked, no-index entry to the separate password-protected shop preview; not a live checkout
 
 ## Preview
 
@@ -21,6 +21,8 @@ Open `index.html` directly or serve this directory with a static file server.
 Place this directory's contents at the repository root. In **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/ (root)`.
 
 All internal paths are relative and require no backend, build process, package installation, or environment variables.
+
+The private shop is separately hosted at https://mycelis-virelis-private-store.growmycelis.workers.dev. The public Purchase entry links there; it does not contain the private catalogue or password. Server-side protection runs before every storefront asset. Shop source is deliberately outside this public GitHub Pages repository. The shop includes mushroom choices and microgreen mixes in groups of three; no live ordering or checkout is enabled.
 
 ## Current limitations
 
