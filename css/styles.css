@@ -324,6 +324,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
 .model-table tbody th { font-weight: 500; }
 .model-table td { color: var(--text-secondary); }
 .model-detail { display: block; margin-top: .25rem; font-size: .8125rem; }
+.model-notes { margin-top: 1.75rem; }
 .preorder-model-note { flex: 1; margin: -.5rem 0 1.25rem; color: var(--text-secondary); font-size: .875rem; line-height: 1.6; }
 
 .preorder-intro { max-width: 52rem; margin-inline: auto; padding: var(--section-space) var(--page-gutter) 2.5rem; text-align: center; }
