@@ -28,7 +28,7 @@ The private shop is separately hosted at https://mycelis-virelis-private-store.g
 
 - The mailing list uses the supplied EmailOctopus inline form. Its fields and confirmation behaviour are managed in EmailOctopus; `privacy.html` describes this connection.
 - Product renders and prototype photos use matched 1000 × 1250 (4:5) photographic crops on the homepage and product pages, retaining the supplied machines and their original settings. The Virelis prototype carries a November 2026 corner label. Earlier Virelis placeholder renders are no longer used on either page.
-- The homepage and Mycelis hero use the supplied green development render. Both pages use the new supplied photo of pink oyster mushrooms growing in the black-and-white machine as the current October 2026 prototype. Mycelis is nearly ready for its first in-person showing; a date has not been announced.
+- The homepage keeps the inward-facing green development render for the standoff. The Mycelis hero and Base/Pro comparison use a matching left-facing Pro render, without mirroring the screen or cartridge lettering. Both pages use the supplied photo of pink oyster mushrooms growing in the black-and-white machine as the current October 2026 prototype. Mycelis is nearly ready for its first in-person showing; a date has not been announced.
 
 Keep `privacy.html` aligned with any future mailing-list service changes.
 
