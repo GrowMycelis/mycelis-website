@@ -46,6 +46,7 @@ The pages explain the side-loading magnetic Mycelis window, planned ready-to-gro
 - An optional seed-mat subscription is under consideration: deliveries every 4, 6 or 8 weeks, an ongoing approximately 10% subscriber discount versus one-off packs, possible introductory offers, and easy skipping/pausing/cancellation. No billing, enrolment or final terms are implemented.
 - Compact bundles in lightweight recyclable cardboard, with internal protection, are the current packaging direction. Packaging dimensions, shipping rates and shelf life are not confirmed.
 - Both products are being designed to support compatible DIY consumables. Mycelis cartridge fit, ventilation, drainage and material requirements will be published after final validation. No prototype internal measurement is presented as maximum external cartridge fit, and no universal third-party compatibility or superior-yield claim is made.
+- Preliminary Mycelis packs: Single Cartridge NZ$24.99 (NZ$24.99 each), Duo Pack NZ$44.99 (NZ$22.50 each, rounded), Triple Pack NZ$59.99 (NZ$20.00 each, rounded). Triple is highlighted as best per-cartridge value. These prices exclude shipping, may change as supplier arrangements are finalised and are not available to order. The planned cartridges arrive colonised and ready to fruit, prepared by specialist mushroom growers. The design supports front and rear fruiting, without a double-yield claim. Local collection/delivery options and suitable varieties' storage instructions/shelf life remain to be confirmed; no refrigeration conditions or storage durations are promised.
 
 Keep the planned-offering sections and FAQs in `virelis.html` / `mycelis.html` aligned when these details change. Public primary actions say **Join the Waitlist**. The small provider-button label adjustment in `js/main.js` changes only its initial wording, not form fields, endpoint, validation or confirmation behaviour.
 
@@ -60,6 +61,7 @@ The existing EmailOctopus form continues to collect mailing-list signups. Four c
 - Virelis mat size/thickness, growing materials, seed range and mix/selection options.
 - Validated Mycelis cartridge fit, ventilation, drainage and material guidance.
 - Refill contents and prices, whether the 27-mat bulk option proceeds, packaging dimensions, storage conditions/shelf life and shipping rates.
+- Mycelis supplier arrangements, final cartridge pack pricing, local collection/delivery options, and tested storage instructions and shelf life by suitable variety.
 - Subscription intervals, standing/introductory discounts and skipping/pausing/cancellation terms.
 - Final machine/refill totals, delivery expectations, tax/shipping treatment and order/refund terms before any checkout opens.
 

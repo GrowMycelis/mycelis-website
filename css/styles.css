@@ -284,6 +284,12 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
 .refill-card h3 { margin-top: 1rem; }
 .refill-price { margin-top: .75rem; color: var(--virelis-dark); font-size: 2rem; font-weight: 600; letter-spacing: -.04em; line-height: 1.2; }
 .refill-card > p:last-child { margin-top: 1rem; color: var(--text-secondary); font-size: .9375rem; }
+.refill-plans--mycelis .refill-card { border-color: #ded2e8; background: linear-gradient(145deg, #f3eef8, white 85%); }
+.refill-plans--mycelis .refill-price { color: var(--mycelis-ink); }
+.refill-plans--mycelis .refill-unit-price { margin-top: .75rem; }
+.refill-plans--mycelis .refill-card--best { position: relative; border-color: #ab8fc2; background: linear-gradient(145deg, #ece1f4, #faf7fc 85%); box-shadow: 0 0 0 1px #ab8fc2; }
+.refill-value-label { position: absolute; top: -.75rem; left: 1.25rem; max-width: calc(100% - 2.5rem); padding: .2rem .6rem; border-radius: 999px; background: var(--mycelis-ink); color: white; font-size: .75rem; font-weight: 500; line-height: 1.5; }
+.refill-waitlist { margin-top: 2rem; }
 .plan-note { max-width: 85ch; margin-top: 1.5rem; color: var(--text-secondary); font-size: .875rem; }
 .refill-notes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2rem, 4vw, 4rem); margin-top: 2.5rem; }
 .refill-notes article { min-width: 0; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle); }
