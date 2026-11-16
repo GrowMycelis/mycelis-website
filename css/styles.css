@@ -309,6 +309,11 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
 
 .model-comparison { margin-block: 1.25rem; padding: var(--section-space) var(--page-gutter); border-radius: 28px; background: var(--bg-paper); }
 .model-comparison .section-heading > p:last-child { margin-top: 1.25rem; color: var(--text-secondary); }
+.model-visuals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(.875rem, 2vw, 1.5rem); max-width: 55rem; margin: 2rem auto 2.5rem; }
+.model-visuals figure { margin: 0; min-width: 0; }
+.model-visuals img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: contain; border-radius: 18px; }
+.model-visuals figcaption { display: flex; flex-direction: column; gap: .35rem; margin-top: .875rem; color: var(--text-secondary); font-size: .75rem; line-height: 1.5; }
+.model-visuals figcaption strong { color: var(--text-primary); font-size: 1rem; font-weight: 600; }
 .model-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: .9375rem; line-height: 1.5; }
 .model-table th, .model-table td { padding: 1rem .75rem; border-bottom: 1px solid var(--border-subtle); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
 .model-table thead th { font-weight: 600; }
