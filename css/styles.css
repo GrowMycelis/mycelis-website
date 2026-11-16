@@ -123,6 +123,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
 .duel-link { display: inline-flex; min-height: 36px; align-items: center; justify-content: center; gap: .4rem; padding: .4rem .75rem; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; background: rgba(255,255,255,.13); color: white; backdrop-filter: blur(16px); font-size: .8rem; white-space: nowrap; }
 .duel-link i { font-style: normal; }
 .duel-mark { position: absolute; z-index: 5; top: 50%; left: 50%; display: grid; width: 3.75rem; height: 3.75rem; place-items: center; border: 1px solid rgba(255,255,255,.6); border-radius: 50%; background: rgba(27,24,34,.45); color: white; box-shadow: -10px 0 32px rgba(190,157,233,.2), 10px 0 32px rgba(182,213,163,.18); backdrop-filter: blur(20px); font-size: 2rem; font-weight: 400; transform: translate(-50%,-50%); pointer-events: none; }
+.duel-render-label { position: absolute; top: calc(clamp(1.1rem,3vw,2.5rem) + 2.5rem); left: clamp(1.1rem,3vw,2.5rem); padding: .3rem .55rem; border: 1px solid rgba(255,255,255,.3); border-radius: 6px; background: rgba(20,20,24,.45); color: white; font-size: .625rem; line-height: 1.4; letter-spacing: .02em; backdrop-filter: blur(12px); }
 
 .development-overview { padding: var(--section-space) var(--page-gutter); }
 .development-overview-heading { max-width: 43rem; margin-bottom: 2.25rem; }
@@ -206,6 +207,7 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.75rem); font-weight: 600; letter-spacing: -
 #waitlist .waitlist-embed input[type="email"] { min-height: 48px; border: 0 !important; border-bottom: 1px solid #b9beb4 !important; border-radius: 0 !important; background: transparent !important; color: var(--text-primary) !important; box-shadow: none !important; font-family: var(--body-font) !important; font-size: 16px !important; }
 #waitlist .waitlist-embed input[type="submit"] { min-height: 48px; padding: .7rem 1rem !important; border: 1px solid #c7bdd0 !important; border-radius: 2px !important; background: transparent !important; color: #63516f !important; box-shadow: none !important; font-family: var(--body-font) !important; font-size: .875rem !important; font-weight: 500 !important; }
 #waitlist .waitlist-embed input[type="submit"]:hover { background: #f0eaf5 !important; }
+#waitlist .waitlist-embed [role="combobox"] { min-height: 48px; font-family: var(--body-font); font-size: 16px; }
 .waitlist-embed iframe { display: block; width: 100%; border: 0; }
 .waitlist-embed noscript a { text-decoration: underline; }
 
