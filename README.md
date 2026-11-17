@@ -28,6 +28,10 @@ The protected shop is separately hosted. Its authentication, catalogue and sourc
 
 ## Assets and checks
 
+Phone layouts use a dedicated breakpoint up to 620px: product and About images come before supporting notes, refill prices use compact rows, comparison columns give more space to model values, and menus/footers retain usable touch targets. The paired homepage hero remains side by side. Styling uses a versioned URL across all pages to avoid mixing old cached CSS with the revised markup.
+
+Virelis has separate crop-research cards for Micro Pak Choy, Cress moss and Kohlrabi purple, with primary-paper links and visible limits. Keep reported study nutrients separate from a product nutrition label; no measured amounts, daily-intake values, high/source descriptors or health benefits are asserted for our harvests. Final seed-lot identities and blend contents still need confirmation.
+
 Retain the existing render/prototype labels and matched photographic frames. Asset filenames and technical model IDs may retain legacy base naming for compatibility; customer-facing labels use Classic. The original images are not altered by the copy update.
 
 Check all seven pages at mobile, tablet and desktop widths, native FAQ/menu keyboard operation, image loading and local links. Check the separate shop's authentication, model/pack selectors and sandbox-only behaviour before deployment. Website checks are not hardware, safety, nutrition or legal validation.
