@@ -6,7 +6,7 @@ A lightweight static site hosted on GitHub Pages. Mycelis is the trading brand b
 
 - index.html: product-family introduction, prototype progress and the mailing list.
 - mycelis.html and virelis.html: product information, Classic/Pro comparisons, intended refills, care and evidence limits.
-- about.html and contact.html: business context, development approach and contact.
+- about.html and contact.html: brand story, design approach and contact.
 - privacy.html: the current source-reviewed data flows and remaining privacy checks.
 - preorder.html: legacy no-index entry to the separate password-protected sandbox shop, not a live preorder page.
 
@@ -18,6 +18,7 @@ The protected shop is separately hosted. Its authentication, catalogue and sourc
 
 ## Content boundaries
 
+- Customer FAQs focus on practical product choices. About focuses on the brand and design approach. Keep internal troubleshooting, incomplete test lists and production planning out of these sections; retain clear availability and consumer-rights information.
 - Appliance prices remain in the protected preview, not the public pages or this readme. Public refill prices are indicative and exclude shipping.
 - Classic is the tactile-control model; Pro adds a screen, scheduling and estimates. Both retain the same intended growing purpose. Do not infer better Pro harvests or completed Classic automation from renders.
 - Keep development observations, intended functions and unvalidated claims distinct. No formal product-safety approval is claimed; customer trials await electrical safety assessment.
