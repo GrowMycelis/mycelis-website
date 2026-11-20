@@ -6,7 +6,7 @@ A lightweight static site hosted on GitHub Pages. Mycelis is the trading brand b
 
 - index.html: product-family introduction, prototype progress and the mailing list.
 - mycelis.html and virelis.html: product information, Classic/Pro comparisons, intended refills, care and evidence limits.
-- about.html and contact.html: brand story, design approach and contact.
+- about.html and contact.html: brand story, prototype progress, availability and contact.
 - privacy.html: the current source-reviewed data flows and remaining privacy checks.
 - preorder.html: legacy no-index entry to the separate password-protected sandbox shop, not a live preorder page.
 
